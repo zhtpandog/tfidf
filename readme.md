@@ -5,7 +5,7 @@ Tf-idf stands for term frequency-inverse document frequency, and the tf-idf weig
 
 ## This code ##
 tfidf.py implements tfidf algorithm and enables you to compare cosine tfidf similarity between your query document and all of the other documents you added.  
-The code is tested in Python 2.7 environment.  
+The code is tested in Python 2.7 environment. It requires numpy.  
 
 ## Usage demo ##
 Create the tfidf object:  
