@@ -122,15 +122,15 @@ class tfidf:
 
 
 
-# usage
-table = tfidf()
-table.addDocument(1, ["cat", "dog", "cat", "pig"])
-table.addDocument(2, ["cat", "cat", "cat", "sheep"])
-table.addDocument(3, ["cat", "dog"])
-table.addDocument(4, ["sheep", "elephant"])
-table.prep()
-print(table.similarities_by_name(1))
-print(table.similarities_by_wordlist(["dog", "dog", "cat"]))
+# # usage
+# table = tfidf()
+# table.addDocument(1, ["cat", "dog", "cat", "pig"])
+# table.addDocument(2, ["cat", "cat", "cat", "sheep"])
+# table.addDocument(3, ["cat", "dog"])
+# table.addDocument(4, ["sheep", "elephant"])
+# table.prep()
+# print(table.similarities_by_name(1))
+# print(table.similarities_by_wordlist(["dog", "dog", "cat"]))
 
 
 
