@@ -9,7 +9,9 @@ The code is tested in Python 2.7 environment.
 
 ## Usage demo ##
 Create the tfidf object:  
-```table = tfidf()```
+```
+table = tfidf()
+```  
 Add documents into corpus:  
 ```
 table.addDocument(1, ["cat", "dog", "cat", "pig"])
@@ -18,11 +20,17 @@ table.addDocument(3, ["cat", "dog"])
 table.addDocument(4, ["sheep", "elephant"])
 ```
 Do the preparation to calaulate idf when you finish adding documents:  
-```table.prep()```
+```
+table.prep()
+```
 Get tfidf cosine similarities between document 1 and all other documents in corpus:  
-```print(table.similarities_by_name(1))```
+```
+print(table.similarities_by_name(1))
+```
 Get tfidf cosine similarities between an unseen document and all other documents in corpus:  
-```print(table.similarities_by_wordlist(["dog", "dog", "cat"]))```
+```
+print(table.similarities_by_wordlist(["dog", "dog", "cat"]))
+```
 Output:  
 ```
 {1: 1.0, 2: 0.27133820715336249, 3: 0.52063649363745212, 4: 0.0}
