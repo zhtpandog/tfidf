@@ -1,7 +1,8 @@
 """
 Computes TFIDF cosine similarity
 Add your documents as two-element input `docname, list_of_words_in_the_document` with `addDocument(docname, list_of_words)`. 
-Get a dict of all the `{docname: similarity_score}` pairs relative to a document by calling `similarities_by_name(queryName)`.
+Use prep() when you finish adding documents.
+Get a dict of all the `{docname: similarity_score}` pairs relative to a document by calling `similarities_by_name(queryName)` or `similarities_by_wordlist(list_of_words)`.
 """
 
 import math
@@ -68,7 +69,7 @@ class tfidf:
       return
 
     query_dict = self.documents[queryName]
-    
+
     # computing similarities
     sims = {}
     for doc in self.documents:
